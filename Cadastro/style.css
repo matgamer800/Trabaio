@@ -1,0 +1,11 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: azure;
+}
+
+main{
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: blueviolet;
+}
