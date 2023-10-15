@@ -1,11 +1,44 @@
+h1{
+    color: #000000;
+    text-align: center;
+}
+p{
+    color: #666;
+    text-align: center;
+}
+
 body{
+    height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: azure;
+    background: linear-gradient(-45deg, rgb(0, 140, 255), rgb(248, 212, 52));
 }
 
 main{
-    width: 60%;
-    margin: 20px auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
     padding: 20px;
-    background-color: blueviolet;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    width: 40%;
+}
+
+label, input{
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+label{
+    width: calc(20%);
+    font-weight: bold;
+}
+
+input{
+    width: calc(70% - 30px);
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
 }
