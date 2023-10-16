@@ -34,7 +34,6 @@ label, input{
 }
 
 label{
-    width: calc(20%);
     font-weight: bold;
     width: 90px;
 }
