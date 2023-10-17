@@ -4,18 +4,8 @@ body{
     padding: 0;
 }
 
-.conteiner{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto auto 100px;
-    grid-template-areas: 
-    "header header header"
-    "main main sidebar"
-    "footer footer footer"
-    ;
-}
-
-.containerHeader{
+ /*header*/
+ .containerHeader{
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(64, 136, 236);
@@ -62,14 +52,30 @@ body{
     text-decoration: none;
     color: white;
 }
+
+.containerLinksA:hover{
+    color: #d8d8d8;
+}
+
 .linkImagem{
     height: 60px;
     margin-top: 0px;
 }
+/*header*/
 
 
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 150px auto 100px;
+    grid-template-areas: 
+    "header header header"
+    "main main sidebar"
+    "footer footer footer"
+    ;
+}
 
-header,aside,main,footer{padding: 20px;}
+header,aside,main,footer{padding: 10px;}
 header{
     grid-area: header;
     background-color: rgb(224, 20, 20);
@@ -85,10 +91,6 @@ main{
     background-color: rgb(255, 255, 255);
 }
 
-footer{
-    grid-area: footer;
-    background-color: #eee;
-}
 
 .item{
     display: inline-block;
@@ -133,3 +135,45 @@ footer{
     grid-template-columns: repeat(auto-fill,minmax(400px,4fr));
     gap: 5px;
 }
+
+
+/* Rodapé */
+
+footer{
+    grid-area: footer;
+    width: 100%;
+    min-width: 250px;
+    background: rgb(64, 136, 236);
+    display: flex;
+    justify-content: space-around;
+}
+
+.caixas{
+    width: 320px;
+    min-width: 150px;
+    padding: 20px;
+}
+
+.caixasTitulo{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.caixasLinha{
+    
+    list-style: none;
+}
+
+.caixasTexto{
+    color: #fff;
+    text-decoration: none;
+}
+
+.caixasTexto:hover{
+    color: #d8d8d8;
+}
+
+.autorais{
+    height: 20px;
+}
+
+/* Rodapé */
