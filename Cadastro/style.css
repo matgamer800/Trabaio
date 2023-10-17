@@ -1,67 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-h1{
-    color: #000000;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-p{
-    color: #666;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
 
-body{
-    height: 100vh;
+body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(-45deg, rgb(0, 140, 255), rgb(248, 212, 52));
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-main{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+main {
     background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 30px;
+    padding: 50px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
-    width: 30%;
+    width: 90%;
+    max-width: 400px;
 }
 
-label, input{
-    display: inline-block;
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+p {
+    color: #000000;
+    text-align: center;
+}
+
+label, input {
+    display: block;
     margin-bottom: 10px;
 }
 
-label{
+label {
     font-weight: bold;
-    width: 90px;
 }
 
-input{
-    width: calc(70% - 30px);
+input {
+    width: 95%;
     padding: 10px;
     border: 2px solid #000000;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
-.botoes{
+.botoes {
     text-align: center;
     margin-top: 10px;
 }
 
-button{
-    font-family: 'Poppins', sans-serif;   
+button {
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(-45deg, rgb(0, 140, 255), rgb(248, 212, 52));
     color: #d6d6d6;
     border-radius: 20px;
     border: none;
-    padding: 10px 50px;
+    padding: 10px 20px;
     cursor: pointer;
     margin: 5px;
 }
 
-button:hover{
+button:hover {
     background: linear-gradient(-45deg, rgb(248, 212, 52), rgb(0, 140, 255));
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
