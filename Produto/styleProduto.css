@@ -31,7 +31,7 @@ main{
 
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(64, 136, 236);
+    background-color: rgb(54, 114, 199);
     align-items: center;
 }
 
@@ -163,7 +163,7 @@ a{
 
 .texto{
     grid-area: texto;
-    background-color: rgb(64, 136, 236);
+    background-color: rgb(54, 114, 199);
 }
 
 .marca{
@@ -175,58 +175,83 @@ a{
 
 footer{
     grid-area: footer;
-    width: 98.5%;
-    min-width: 250px;
-    background: rgb(64, 136, 236);
-    display: flex;
-    /*justify-content: space-around;*/
+    width: 98.8%;
 }
 
-.conteinerFooter{
+.rodape{
+    background-color: rgb(54, 114, 199);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "caixas caixas caixas"
-    "autorais autorais autorais"
-    ;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px;
 }
 
-.caixas,.autorais{padding: 10px;}
-
-
-
-.caixas{
-    grid-area: caixas;
-    width: 320px;
-    min-width: 150px;
-    padding: 20px;
+.footerLink{
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+.footerLink:hover{
+    opacity: 0.5;
 }
 
-.caixasTitulo{
-    color: #fff;
-    margin-bottom: 20px;
-}
-.caixasLinha{
-    
+.footerList{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     list-style: none;
 }
 
-.caixasTexto{
-    color: #fff;
-    text-decoration: none;
+.footerSubscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
 }
 
-.caixasTexto:hover{
-    color: #d8d8d8;
+.footerSubscribe h2{
+    margin-top: 35px;
+    margin-bottom: 5px;
 }
 
-.autorais{
-    grid-area: autorais;
-    height: 0px;
+.footerSubscribe p{
+    color: rgb(236, 236, 236);
 }
 
+.inputGroup{
+    display: flex;
+    align-items: center;
+    background-color: #fbebeb;
+    border-radius: 4px;
+}
 
+.inputGroup input{
+    all: unset;
+    padding: 10px;
+    width: 100%;
+}
 
+.inputGroup button{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 0px 16px;
+    font-size: 15px;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
 
+.inputGroup button:hover{
+    opacity: 0.8;
+}
 
+.footerAutorais{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 88, 162);
+    padding: 10px;
+    font-weight: 100;
+    color: white;
+}
+
+/* Rodapé */
