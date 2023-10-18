@@ -8,34 +8,78 @@
 </head>
 <body>
     <div class="conteiner">
-        <header>
-            <h1>Cabeçalho</h1>
-            
-                <ul style="list-style: none;">
-                    <a href="../Grid/index.html"><li>Home </li></a>
-                    <a href="#"><li>Contato </li></a>
-                    <a href="#"><li>Sobre </li></a>
-                </ul>
-                <br>
-            
-        </header>
-        <aside><h2>Barra lateral</h2></aside>
+        <header class="containerHeader">
+
+            <ul class="containerLinks">
+                <li>
+                    <a href="../Pagina inicial/index.html"><img class="linkImagem" src="../Imagens/iconeHome.png" alt="icone Home"></a>
+                </li>
+            </ul>
+    
+            <div class="containerBusca">
+                <input class="busca" type="text"name="Busque" id="text"placeholder="Busque aqui">
+                <label for="pesquisa"></label>
+            </div>
+    
+                
+                <ul class="containerLinks">
+                    <li><a class="containerLinksA"href="#"><h4>Sobre</h4></a></li>
+                    <li><a class="containerLinksA"href="#"><h4>Contato</h4></a></li>
+                </ul>    
+    
+                <ul class="containerLinks">
+                    <li><a class="containerLinksA" href="#"><h4>Entrar</h4></a></li>
+                    <li><a class="containerLinksA" href="../Cadastro/./Cadastro.html"><h4>Cadastrar</h4></a></li>
+                </ul>  
+    
+        </header> 
+        
 
             <main>
                 <h2>Conteudo principal</h2>
                 <section>
-                    <div class="imagem"><img src="../Imagens/./Placa de video.jpeg" ></div>
-
-                    <div class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quam delectus doloribus id repellendus alias, eos inventore officiis pariatur quisquam sequi quia aliquid quos sunt corporis architecto quaerat ullam perspiciatis!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nemo perferendis asperiores earum recusandae quisquam quae blanditiis? Labore, itaque! Esse, sed consequatur! Esse quidem magni maxime exercitationem vel minus fuga!
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab necessitatibus autem beatae illo minus, atque, unde, labore eaque nemo aliquid culpa libero quaerat dolorem? Natus fuga reprehenderit praesentium fugit ex.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minima amet architecto praesentium reiciendis quibusdam consectetur, laboriosam autem explicabo quasi, asperiores deserunt ipsam quas mollitia laudantium quia alias aliquam recusandae?
-                    </div>
+                    <div class="itemConteiner">
+                        <div class="imagem"><img src="../Imagens/./Placa.png" height="80%" width="50%"></div>
+                    
+                    <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, consequuntur sunt. Consequuntur optio vel, impedit est, pariatur temporibus placeat numquam facilis, iure molestiae exercitationem explicabo. Labore iure architecto itaque fugit.</div>
+                </div>
                 </section>
             </main>
-        <footer>
-            <h2>Rodapé</h2>
-        </footer>    
+            <footer>
+
+                <div class="caixas">
+                    <h2 class="caixasTitulo">Departamentos</h2>
+                    <ul>
+                        <li class="caixasLinha"><a class="caixasTexto" href="#">NVDIA</a></li>
+                        <li class="caixasLinha"><a class="caixasTexto" href="#">AMD</a></li>
+                        <li class="caixasLinha"><a class="caixasTexto" href="#">Intel</a></li>
+                    </ul>
+                </div>  
+    
+                <div class="caixas">
+                    <h2 class="caixasTitulo">Mídias Sociais</h2>
+                    <ul>
+                        <li class="caixasLinha"><a class="caixasTexto" href="#">Instagram</a></li>
+                        <li class="caixasLinha"><a class="caixasTexto" href="#">TikTok</a></li>
+                        <li class="caixasLinha"><a class="caixasTexto" href="#">YouTube</a></li>
+                    </ul>
+                </div>   
+                <div class="caixas">
+                    <h2 class="caixasTitulo">Contatos</h2>
+                    <ul>
+                        <li class="caixasLinha"><a class="caixasTexto" href="#">Telefone</a></li>
+                        <li class="caixasLinha"><a class="caixasTexto" href="#">WhatsApp</a></li>
+                        <li class="caixasLinha"><a class="caixasTexto" href="#">E-Mail</a></li>
+                    </ul>
+                </div>
+    
+                <div class="autorais">
+                    <p>
+                        <small>TecUP Store &copy; é uma marca registrada de Gabriel, Matheus e Willian. Todos os direitos reservados. Os preços anunciados neste site ou via e-mail promocional podem ser alterados sem prévio aviso. O TecUP Store não é responsável por erros descritivos. As fotos contidas nesta página são meramente ilustrativas do produto e podem variar de acordo com o fornecedor/lote do fabricante. Este site trabalha 100% em HTML e CSS.</small>
+                    </p>
+                </div>
+    
+            </footer>   
 
     </div>
 
