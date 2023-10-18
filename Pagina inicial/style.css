@@ -4,8 +4,22 @@ body{
     padding: 0;
 }
 
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto 100px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+
+
  /*header*/
  .containerHeader{
+
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(64, 136, 236);
@@ -61,42 +75,25 @@ body{
     height: 60px;
     margin-top: 0px;
 }
-/*header*/
-
-
-.conteiner{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 150px auto 200px;
-    grid-template-areas: 
-    "header header header"
-    "main main sidebar"
-    "footer footer footer"
-    ;
+a{
+    text-decoration: none;
+    text-decoration-color: red;
 }
 
-header,aside,main,footer{padding: 10px;}
-header{
-    grid-area: header;
-    background-color: rgb(224, 20, 20);
-}
-
-aside{
-    grid-area: sidebar;
-    background-color: rgb(255, 242, 0);
-}
+header,main,footer{padding: 10px;}
 
 main{
     grid-area: main;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(-45deg, rgb(0, 140, 255), rgb(248, 212, 52));
 }
+
 
 
 .item{
     display: inline-block;
     /*width: calc(33.33% - 43px);
     min-width: 200px;*/
-    background-color: rgb(255, 242, 0);
+    background-color: rgb(56, 120, 209);
     color: #fff;
     padding: 50px 20px;
     margin-bottom: 5px;
@@ -135,6 +132,14 @@ main{
     grid-template-columns: repeat(auto-fill,minmax(400px,4fr));
     gap: 5px;
 }
+
+.preco_antigo{
+    color:red;
+}
+.preco{
+    color: rgb(30, 255, 0);
+}
+
 
 
 /* Rodapé */
