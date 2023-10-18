@@ -17,6 +17,7 @@ body{
 }
 
 
+
  /*header*/
  .containerHeader{
 
@@ -81,7 +82,6 @@ a{
 }
 
 header,main,footer{padding: 10px;}
-
 header{
     grid-area: header;
 }
@@ -112,21 +112,21 @@ main{
 }
 @media (max-width: 727px) {
 
-    .item{
+    .item,a{
         width: calc(50% - 43px);
 }
 }
 
 @media (max-width: 265px) {
 
-    .item{
+    .item,a{
         width: calc(40% - 43px);
 }
 }
 
 @media (max-width: 192px) {
 
-    .item{
+    .item,a{
         width: calc(40% - 43px);
 }
 }
