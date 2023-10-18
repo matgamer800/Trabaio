@@ -7,7 +7,7 @@ body{
 
 .conteiner{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
     "header header header"
@@ -15,7 +15,15 @@ body{
     "footer footer footer"
     ;
 }
+header,main,footer{padding: 10px;}
+header{
+    grid-area: header;
+}
 
+main{
+    grid-area: main;
+    background: linear-gradient(-45deg, rgb(0, 140, 255), rgb(248, 212, 52));
+}
 
 
  /*header*/
@@ -81,20 +89,10 @@ a{
     text-decoration-color: red;
 }
 
-header,main,footer{padding: 10px;}
-header{
-    grid-area: header;
-}
-
-main{
-    grid-area: main;
-    background: linear-gradient(-45deg, rgb(0, 140, 255), rgb(248, 212, 52));
-}
-
-
 .titulo{
     padding-left: 5%;
 }
+
 .item{
     display: inline-block;
     /*width: calc(33.33% - 43px);
@@ -165,20 +163,41 @@ main{
 
 .texto{
     grid-area: texto;
+    background-color: rgb(64, 136, 236);
+}
+
+.marca{
+    color: black;
+    text-align: center;
     
 }
 /* Rodapé */
 
 footer{
     grid-area: footer;
-    width: 100%;
+    width: 98.5%;
     min-width: 250px;
     background: rgb(64, 136, 236);
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
 }
 
+.conteinerFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "caixas caixas caixas"
+    "autorais autorais autorais"
+    ;
+}
+
+.caixas,.autorais{padding: 10px;}
+
+
+
 .caixas{
+    grid-area: caixas;
     width: 320px;
     min-width: 150px;
     padding: 20px;
@@ -203,10 +222,11 @@ footer{
 }
 
 .autorais{
+    grid-area: autorais;
     height: 0px;
 }
 
-/* Rodapé */
+
 
 
 
