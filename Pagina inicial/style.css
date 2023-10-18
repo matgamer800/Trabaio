@@ -82,6 +82,10 @@ a{
 
 header,main,footer{padding: 10px;}
 
+header{
+    grid-area: header;
+}
+
 main{
     grid-area: main;
     background: linear-gradient(-45deg, rgb(0, 140, 255), rgb(248, 212, 52));
