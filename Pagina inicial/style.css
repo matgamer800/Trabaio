@@ -92,7 +92,9 @@ main{
 }
 
 
-
+.titulo{
+    padding-left: 5%;
+}
 .item{
     display: inline-block;
     /*width: calc(33.33% - 43px);
@@ -106,7 +108,7 @@ main{
 
 .itens a:hover{
 
-    background-image: linear-gradient(to top,#08578c,#0d86d6);
+    background-image: linear-gradient(-45deg, rgb(0, 140, 255), rgb(248, 212, 52));
     box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
