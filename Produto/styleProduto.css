@@ -121,22 +121,22 @@ a{
 }
 @media (max-width: 600px) {
 
-    .item,a{
-        width: calc(50% - 43px);
+    .botao,.item,a{
+        width: calc(80% - 10px);
 }
 }
 
-@media (max-width: 265px) {
+@media (max-width: 280px) {
 
-    .item,a{
-        width: calc(40% - 43px);
+    .botao,.item,a{
+        width: calc(80% - 10px);
 }
 }
 
-@media (max-width: 192px) {
+@media (max-width: 160px) {
 
-    .item,a{
-        width: calc(40% - 43px);
+    .texto,.valor,.valora,img,.botao,.item,a{
+    width: calc(300px- 1px);
 }
 }
 
@@ -245,17 +245,14 @@ a{
 }
 .botao{
     grid-area: botao;
+    padding: 35px 30px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     border-radius: 15px;
-    padding: 0px;
-    padding-top: 2px;
     cursor: pointer;
-    font-size: 70px;
+    font-size:60px;
     background-color: orange;
-
-    
 }
 
 /* Rodapé */
