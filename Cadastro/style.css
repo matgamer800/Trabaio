@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     background: linear-gradient(-45deg, rgb(0, 140, 255), rgb(248, 212, 52));
     margin: 0px;
     display: flex;
@@ -51,7 +49,7 @@ input {
 }
 
 button {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     background: linear-gradient(-45deg, rgb(0, 140, 255), rgb(248, 212, 52));
     color: #d6d6d6;
     border-radius: 20px;
@@ -64,4 +62,9 @@ button {
 button:hover {
     background: linear-gradient(-45deg, rgb(248, 212, 52), rgb(0, 140, 255));
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+a{
+    text-decoration: none;
+    color: #d6d6d6;
 }
