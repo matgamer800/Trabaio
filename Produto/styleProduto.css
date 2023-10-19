@@ -121,8 +121,8 @@ a{
 }
 @media (max-width: 600px) {
 
-    .botao,.item,a{
-        width: calc(80% - 10px);
+    .rodape,.botao,.item,a{
+        width: calc(90% - 10px);
 }
 }
 
