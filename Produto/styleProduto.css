@@ -93,6 +93,7 @@ main{
     margin-top: 0px;
 }
 a{
+    min-width: 500px;
     text-decoration: none;
     text-decoration-color: red;
 }
@@ -119,24 +120,24 @@ a{
     box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
-    .item,a{
-        width: calc(50% - 43px);
+    .rodape,.botao,.item,a{
+        width: calc(80% - 10px);
 }
 }
 
-@media (max-width: 265px) {
+@media (max-width: 280px) {
 
-    .item,a{
-        width: calc(40% - 43px);
+    .botao,.item,a{
+        width: calc(80% - 10px);
 }
 }
 
-@media (max-width: 192px) {
+@media (max-width: 160px) {
 
-    .item,a{
-        width: calc(40% - 43px);
+    .texto,.valor,.valora,img,.botao,.item,a{
+    width: calc(300px- 1px);
 }
 }
 
@@ -245,17 +246,14 @@ a{
 }
 .botao{
     grid-area: botao;
+    padding: 35px 30px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     border-radius: 15px;
-    padding: 0px;
-    padding-top: 2px;
     cursor: pointer;
-    font-size: 70px;
+    font-size:60px;
     background-color: orange;
-
-    
 }
 
 /* Rodapé */
