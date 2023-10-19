@@ -17,7 +17,6 @@ body{
     "main main main"
     "footer footer footer"
     ;
-    
 }
 
 
@@ -197,7 +196,7 @@ footer{
 }
 
 .footerSubscribe p{
-    color: rgb(32, 32, 32);
+    color: #fbebeb;
 }
 
 .inputGroup{
