@@ -1,0 +1,202 @@
+body{
+    font-family: Arial;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px; /* espaçamento de letras */
+}
+
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto 100px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+
+
+ /*header*/
+ .containerHeader{
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(54, 114, 199);
+    align-items: center;
+}
+
+.containerBusca{
+    padding: 10px;
+}
+
+.busca{
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 24px;
+    border: 2px solid white;
+    text-align: center;
+    background: transparent;
+    font-size: medium;
+}
+
+.busca::placeholder{
+    color: white;
+    background: url("../Imagens/lupa.png") no-repeat;
+    background-position: 30px;
+    padding: 10px;
+}
+
+.busca:focus{
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    outline: 0px;
+}
+
+.busca:focus::placeholder{
+    color: rgba(255, 255, 255, 0.384);
+}
+
+.containerLinks{
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+}
+
+.containerLinksA{
+    text-decoration: none;
+    color: white;
+}
+
+.containerLinksA:hover{
+    color: #d8d8d8;
+}
+
+.linkImagem{
+    height: 95px;
+    margin-top: 0px;
+}
+a{
+    text-decoration: none;
+    text-decoration-color: red;
+}
+
+header, main {padding: 10px;}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+    background: linear-gradient(-45deg, rgb(47, 158, 249),rgb(255, 217, 48));
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloGeral{
+    text-align: center;
+    font-size: 30px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.sobreTudo{
+    background-color: #fff;
+    border-radius: 30px;
+    border: 20px;
+    padding: 2%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Rodapé */
+
+footer{
+    grid-area: footer;
+    width: 100%;
+}
+
+.rodape{
+    background-color: rgb(54, 114, 199);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px;
+}
+
+.footerLink{
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+.footerLink:hover{
+    opacity: 0.5;
+}
+
+.footerList{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.footerSubscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.footerSubscribe h2{
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.footerSubscribe p{
+    color: #fbebeb;
+}
+
+.inputGroup{
+    display: flex;
+    align-items: center;
+    background-color: #fbebeb;
+    border-radius: 4px;
+}
+
+.inputGroup input{
+    all: unset;
+    padding: 10px;
+    width: 100%;
+}
+
+.inputGroup button{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 0px 16px;
+    font-size: 15px;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+.inputGroup button:hover{
+    opacity: 0.8;
+}
+
+.footerAutorais{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 88, 162);
+    padding: 10px;
+    font-weight: 100;
+    color: white;
+} 
+
+/* Rodapé */
