@@ -5,10 +5,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* min-height: 939px; */
-    background-repeat: no-repeat;
-    height: 100vh;
-      /* vh = tamanho da altura (View port Height) */
+    min-height: 100vh; /* vh = tamanho da altura (View port Height) */
+    background-repeat: no-repeat; 
 }
 
 main {
@@ -18,7 +16,6 @@ main {
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
     width: 90%;
     max-width: 400px;
-    
 }
 
 h1 {
